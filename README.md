@@ -6,11 +6,11 @@ Create a small project to learn Vue.js by integrating an exercise API.
 ### 1️⃣ Create the Project with Vite
 Run the following command to generate a Vue.js project using Vite:  
 ```sh
-npm create vite@latest gym-app --template vue
+npm create vite@latest application-name --template vue
 ```
 Then, install the dependencies:
 ```sh
-cd gym-app
+cd  application-name
 npm install
 ```
 ### 2️⃣ Using the Ninja API (Exercises)
