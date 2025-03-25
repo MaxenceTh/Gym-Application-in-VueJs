@@ -2,17 +2,18 @@ import axios from "axios";
 
 
 const API_URL = "https://api.api-ninjas.com/v1/exercises";
-const API_KEY = import.meta.env.VITE_NINJA_API_KEY; // Remplace par ta clé API
+const API_KEY = import.meta.env.VITE_NINJA_API_KEY; 
 
 const apiService = {
   async getExercises(queryParams = {}) {
     try {
       const response = await axios.get(API_URL, {
         headers: {
-          "X-Api-Key": API_KEY, // Inclusion de la clé API
+          "X-Api-Key": API_KEY, 
         },
-        params: queryParams, // Exemple : { muscle: "quadriceps" }
+        params: queryParams, // Example : { muscle: "quadriceps" }
       });
+      console.log(response.data)
       return response.data;
     } catch (error) {
       console.error("Erreur lors de la récupération des exercices :", error);
