@@ -30,7 +30,7 @@ const handleChange = (event) => {
 
 
 <template>
-    <label>Choose an muscles:</label>
+    <label>Choose an muscle:</label>
     <select id="exercise"  @change="handleChange" :value="selected">
         <option v-for="(label, key) in exercise" :key="key" :value="label">
             {{ label }}
